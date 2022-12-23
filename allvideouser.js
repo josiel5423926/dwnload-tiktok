@@ -99,7 +99,7 @@ config();
 main();
 //start
 async function main() {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
   await page.evaluateOnNewDocument(() => {
